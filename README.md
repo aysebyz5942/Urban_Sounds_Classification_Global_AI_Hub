@@ -236,7 +236,7 @@ model.compile(optimizer='adam', loss="sparse_categorical_crossentropy", metrics=
 ```
 history = model.fit(X_train, y_train, epochs=50, validation_data=(X_val, y_val))
 ```
-
+![This is an image](images/train.png)
 ```
 result = model.evaluate(X_test, y_test)
 print(f"Loss: {result[0]} - Accuracy: {result[1]}")
