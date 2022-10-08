@@ -10,6 +10,7 @@ Koç Holding Derin Öğrenme Bootcamp
 !wget https://zenodo.org/record/1203745/files/UrbanSound8K.tar.gz
 tar -xf UrbanSound8K.tar.gz
 ```
+![This is an image](images/tar_dosya_indirme.png)
 
 ## Imports
 
@@ -52,7 +53,7 @@ def save_spectrogram(spectrogram, file_name, classid):
 df = pd.read_csv("UrbanSound8K/metadata/UrbanSound8K.csv")
 df.head()
 ```
-
+![This is an image](images/tablo_head.png)
 ```
 path_to_folds = "UrbanSound8K/audio"
 
@@ -89,6 +90,8 @@ with open("errors.txt", "w") as error_file:
         
         print(f"\rNumber: {number_of_processed}/{number_of_files} | Errors: {number_of_errors}", end="")
 ```
+![This is an image](images/spectogram.png)
+
 ## Preprocessing
 
 ```
@@ -113,10 +116,11 @@ for classid in os.listdir("spectrograms"):
         
         print(f"\rProcessed: {number_of_processed} | Erros: {number_of_errors}", end="")
 ```
+![This is an image](images/processed.png)
 ```
 len(images)
 ```
-
+![This is an image](images/len.png)
 ```
 for _ in range(10):
     random.shuffle(images)
@@ -161,7 +165,7 @@ print(len(y_val))
 print(len(X_test))
 print(len(y_test))
 ```
-
+![This is an image](images/print.png)
 ```
 X_train = np.array(X_train)
 y_train = np.array(y_train)
