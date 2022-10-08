@@ -264,15 +264,4 @@ plt.ylabel("Accuracy")
 plt.legend()
 plt.show()
 ```
-
-
-
-
-
-
-
-
-
-
-
-
+![This is an image](/../main/assets/images/electrocat.png)
